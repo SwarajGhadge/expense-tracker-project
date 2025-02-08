@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expense tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="parent-container">
+        <!-- header -->
+        <header class="main-header d-flex justify-content-around align-items-center">
+            <h2 class="fw-bolder fs-1 text-light" style="text-shadow: 5px 2px 4px black;">Expense Tracker</h2>
+            <a href="index.html"><button class="input-button2 rounded-2 ms-3">Log out</button></a>
+        </header>
+        <!-- body -->
+        <div class="container text-center">
+            <!-- all inputs -->
+            <div class="input-div border border-2 rounded-4 p-4 mt-5 shadow-lg" >
+                        <div class="input-group fw-bold">
+                            <div class="form-floating">
+                              <input type="date" class="form-control" id="floatingInputGroup1" placeholder="Date">
+                              <label for="floatingInputGroup1">Date</label>
+                            </div>
+                        </div>
+        
+                           <div class="input-group fw-semibold">
+                            <div class="form-floating">
+                              <input type="number" class="form-control" id="floatingInputGroupp" placeholder="Amount">
+                              <label for="floatingInputGroupp">Amount</label>
+                            </div>
+                          </div>
+        
+                          <select class="form-select fw-semibold" aria-label="Default select example" id="select-optionss">
+                            <option selected>Transaction</option>
+                            <option value="1">Income</option>
+                            <option value="2">Expense</option>
+                          </select>
+                
+                          <div class="input-group fw-semibold">
+                            <div class="form-floating">
+                              <input type="text" class="form-control" id="floatingInputGroupr" placeholder="Reason">
+                              <label for="floatingInputGroupr">Reason</label>
+                            </div>
+                          </div>
+
+                        <button class="input-button rounded-2 ms-3">Add</button>    
+                  </div>
+
+            <!-- cards -->
+             <div class="cards-container mt-5">
+                <div class="card rounded-4" style="width: 18rem;">
+                    <div class="card-body">
+                      <h4 class="card-title">Total Income</h4>
+                      <p class="card-text fs-1 fw-bold">&dollar;5000</p>
+                    </div>
+                </div>
+
+                <div class="card rounded-4" style="width: 18rem;">
+                    <div class="card-body">
+                      <h4 class="card-title">Total Expense</h4>
+                      <p class="card-text fs-1 fw-bold">&dollar;2000</p>
+                    </div>
+                </div>
+
+                <div class="card rounded-4" style="width: 18rem;">
+                    <div class="card-body">
+                      <h4 class="card-title">Total Balance</h4>
+                      <p class="card-text fs-1 fw-bold">&dollar;3000</p>
+                    </div>
+                </div>
+
+             </div>
+
+             <!-- details table -->         
+             <table class="table table-hover mt-5 my-table">
+                <thead class="text-center" >
+                    <tr>
+                        <th class="fs-5" style="background-color: var(--primary-color); color: white; text-shadow: 0px 2px 4px black;">Date</th>
+                        <th class="fs-5" style="background-color: var(--primary-color); color: white; text-shadow: 0px 2px 4px black;">Amount</th>
+                        <th class="fs-5" style="background-color: var(--primary-color); color: white; text-shadow: 0px 2px 4px black;">Transaction Type</th>
+                        <th class="fs-5" style="background-color: var(--primary-color); color: white; text-shadow: 0px 2px 4px black;">Reason</th>
+                        <th class="fs-5" style="background-color: var(--primary-color); color: white; text-shadow: 0px 2px 4px black;">Action</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center ">
+                    <tr>
+                        <td class="fw-semibold">01-04-99</td>
+                        <td class="fw-semibold">5000</td>
+                        <td class="fw-semibold">Income</td>
+                        <td class="fw-semibold">Salary</td>
+                        <td class="fw-semibold"><button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td class="fw-semibold">02-05-25</td>
+                        <td class="fw-semibold">1000</td>
+                        <td class="fw-semibold">Expense</td>
+                        <td class="fw-semibold">Car service</td>
+                        <td class="fw-semibold"><button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td class="fw-semibold">03-05-25</td>
+                        <td class="fw-semibold">5000</td>
+                        <td class="fw-semibold">Income</td>
+                        <td class="fw-semibold">Salary</td>
+                        <td class="fw-semibold"><button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td class="fw-semibold">04-06-25</td>
+                        <td class="fw-semibold">2000</td>
+                        <td class="fw-semibold">Expense</td>
+                        <td class="fw-semibold">Bike Service</td>
+                        <td class="fw-semibold"><button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td class="fw-semibold">04-07-25</td>
+                        <td class="fw-semibold">5000</td>
+                        <td class="fw-semibold">Income</td>
+                        <td class="fw-semibold">Salary</td>
+                        <td class="fw-semibold"><button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td class="fw-semibold">05-07-25</td>
+                        <td class="fw-semibold">3000</td>
+                        <td class="fw-semibold">Expense</td>
+                        <td class="fw-semibold">Books</td>
+                        <td class="fw-semibold"><button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td class="fw-semibold">05-10-25</td>
+                        <td class="fw-semibold">5000</td>
+                        <td class="fw-semibold">Income</td>
+                        <td class="fw-semibold">Salary</td>
+                        <td class="fw-semibold"><button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
